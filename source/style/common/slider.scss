@@ -1,0 +1,33 @@
+.slider {
+  input {
+    display: none;
+  }
+}
+.slider__inner {
+  overflow: hidden;
+}
+.slider__slides {
+  width: 300%;
+}
+label {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 12px;
+  cursor: pointer;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
+  background-color: $lightgray;
+}
+.slide {
+  width: 320px;
+  float: left;
+}
+#btn-1:checked ~ .slider__controls label[for="btn-1"],
+#btn-2:checked ~ .slider__controls label[for="btn-2"],
+#btn-3:checked ~ .slider__controls label[for="btn-3"],
+#btn-4:checked ~ .slider__controls label[for="btn-4"],
+#btn-5:checked ~ .slider__controls label[for="btn-5"],
+#btn-6:checked ~ .slider__controls label[for="btn-6"] {
+  background-color: $purple;
+}

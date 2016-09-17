@@ -1,0 +1,21 @@
+.menu__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.menu__item {
+  display: block;
+  text-align: center;
+  width: 33%;
+}
+.menu__link {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  color: $purple;
+}
