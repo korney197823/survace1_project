@@ -5,3 +5,28 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-family: montserratregular, sans-serif;
+  line-height: 18px;
+  font-weight: normal;
+}
+.clearfix {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+.container {
+  width: 320px;
+  margin: 0 auto;
+  @media ($tablet-widths) {
+    width: 640px;
+  }
+  @media ($darkgray) {
+    width: 1920px;
+  }
+}
