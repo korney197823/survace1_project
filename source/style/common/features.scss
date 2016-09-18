@@ -1,7 +1,29 @@
+.features {
+  position: relative;
+}
 .features__title {
   text-transform: uppercase;
-  font-size: 3.333333em;
+  font-size: 50px;
   font-weight: bold;
-  line-height: 0.3em;
+  line-height: 60px;
   color: $lightgray;
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 245px;
+}
+
+.features__footballer-img {
+  position: absolute;
+  z-index: 2;
+  left: 63px;
+  width: 170px;
+  top: 81px;
+}
+.features__basketballer-img {
+  position: absolute;
+  z-index: 2;
+  left: 4px;
+  width: 304px;
+  top: 93px;
 }
