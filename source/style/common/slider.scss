@@ -13,6 +13,9 @@
 }
 .slider__inner {
   overflow: hidden;
+  @media ($tablet-widths) {
+    overflow: visible;
+  }
 }
 .slider__controls {
   position: absolute;
@@ -20,10 +23,16 @@
   left: 0;
   right: 0;
   text-align: center;
+  @media ($tablet-widths) {
+    display: none;
+  }
 }
 .slider__slides {
   width: 300%;
   transition: transform 0.8s ease;
+  @media ($tablet-widths) {
+    width: 100%;
+  }
 }
 label {
   display: inline-block;
@@ -38,6 +47,10 @@ label {
 .slide {
   width: 300px;
   float: left;
+  @media ($tablet-widths) {
+    width: 100%;
+    float: none;
+  }
 }
 .slide__title {
   text-transform: uppercase;

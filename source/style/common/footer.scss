@@ -1,0 +1,50 @@
+.page__footer {
+  position: relative;
+  min-height: 570px;
+  padding: 95px 5px 15px 5px;
+
+  background: center url("../img/bg-footer.jpg") no-repeat;
+  background-size: cover;
+
+}
+.footer__logo-wrap {
+  margin: 0 auto;
+  width: 73px;
+  height: 78px;
+}
+
+.page__footer-title {
+  font-size: 2.2666666em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 70px;
+  &:before {
+    position: absolute;
+    content: '';
+    width: 90px;
+    height: 3px;
+    transform: rotate(-45deg);
+    background-color: #5e42b0;
+    top: 240px;
+    left: 0px;
+  }
+  &:after {
+    position: absolute;
+    content: '';
+    width: 155px;
+    height: 3px;
+    transform: rotate(-45deg);
+    background-color: #5e42b0;
+    top: 243px;
+    left: 118px;
+  }
+  span {
+    display: block;
+    font-size: 15px;
+    color: $purple;
+    text-align: center;
+    margin-top: 10px;
+  }
+}

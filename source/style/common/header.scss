@@ -1,12 +1,21 @@
 .page-header {
   min-height: 100vh;
-  padding: 30px 6px 15px 6px;
+  padding: 35px 6px 15px 6px;
   background: center url("../img/bg-header.jpg") no-repeat;
   background-size: cover;
 }
+.logo__wrapper {
+  display: flex;
+  justify-content: center;
+  @media ($tablet-widths) {
+    justify-content: space-between;
+  }
+}
 .logo {
   width: 140px;
-  margin: 0 auto;
+  @media ($tablet-widths) {
+    width: 190px;
+  }
 }
 .logo-img {
   width: 100%;
@@ -17,18 +26,53 @@
     display: none;
   }
 }
+.text.header-text span {
+  @media ($tablet-widths) {
+    display: block;
+    font-size: 14px;
+    line-height: 39px;
+    text-transform: uppercase;
+    font-weight: 100;
+  }
+}
 .header-title {
+  position: relative;
   color: #ffffff;
   font-size: 2.13333333333em;
   text-transform: uppercase;
   line-height: 1.5em;
-  margin-top: 135px;
+  margin-top: 125px;
   margin-bottom: 110px;
+  @media ($tablet-widths) {
+    font-size: 64px;
+    line-height: 1.3em;
+    padding-left: 80px;
+  }
+  &::before {
+    position: absolute;
+    content: '';
+    width: 220px;
+    height: 3px;
+    transform: rotate(-55deg);
+    background-color: $purple;
+    top: 75px;
+    left: 40px;
+    @media ($tablet-widths) {
+      width: 400px;
+      height: 5px;
+      transform: rotate(-50deg);
+      top: 120px;
+      left: 145px;
+    }
+  }
 }
 .header-title__row {
   display: block;
   &:first-of-type {
     padding-bottom: 15px;
+    @media ($tablet-widths) {
+      padding-bottom: 0;
+    }
   }
   &:not(:first-of-type) {
     padding-left: 55px;
@@ -40,9 +84,13 @@
   flex-wrap: nowrap;
   flex-direction: row;
   margin-bottom: 40px;
+  @media ($tablet-widths) {
+    margin-bottom: 75px;
+  }
 }
 .btn {
   display: block;
+  position: relative;
   width: 142px;
   height: 39px;
   padding: 8px 10px 5px 45px;
@@ -55,4 +103,45 @@
   text-decoration: none;
   color: #ffffff;
   text-transform: uppercase;
+  @media ($tablet-widths) {
+    width: 310px;
+    height: 77px;
+    border-radius: 40px;
+    font-size: 14px;
+    padding: 15px 30px 15px 110px;
+  }
+  &--apple::before {
+    position: absolute;
+    content: '';
+    background-image: url(../img/Apple.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    top: 8px;
+    left: 18px;
+    @media ($tablet-widths) {
+      width: 33px;
+      height: 37px;
+      top: 15px;
+      left: 50px;
+    }
+  }
+  &--google::before {
+    position: absolute;
+    content: '';
+    background-image: url(../img/google.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    top: 8px;
+    left: 18px;
+    @media ($tablet-widths) {
+      width: 36px;
+      height: 39px;
+      top: 17px;
+      left: 56px;
+    }
+  }
 }

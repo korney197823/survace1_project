@@ -1,14 +1,17 @@
 footer.page__footer.container
+  .footer__logo-wrap
+    img.footer__logo(src="assets/img/footer__logo.png")
   h2.page__footer-title Download app
-    span Show everyone what you can do!
-  a.btn(href="#") Download on the App Store
-  a.btn(href="#")  Get it on Google Play
+    span  Show everyone what you can do!
+  .btn__wrapper
+    a.btn.btn--apple(href="#") Download on the App Store
+    a.btn.btn--google(href="#")  Get it on Google Play
   .social
     .logo
       img.logo-img(src="assets/img/logo.png" alt="surface1" width="189" height="33")
     .social__wrap
-      a.social__facebook(href="#") Facebook
-      a.social__twitter(href="#")  Twitter
-      a.social__instagram(href="#")  Instagram
+      a.social__icon.social__icon--facebook(href="#") Facebook
+      a.social__icon.social__icon--twitter(href="#")  Twitter
+      a.social__icon.social__icon--instagram(href="#")  Instagram
     .text
       span Contact Us | Terms & Conditions

@@ -1,0 +1,53 @@
+.social {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50px;
+  background-color: rgba(0, 0, 0, 0.6);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  .logo,
+  .text {
+    display: none;
+    @media ($desktop-widths) {
+      display: block;
+    }
+  }
+
+}
+.social__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  width: 150px;
+  //margin: 0 auto;
+  font-size: 0;
+}
+
+.social__icon {
+  background-image: url(../img/spritesheet.png);
+  background-repeat: no-repeat;
+  display: block;
+}
+
+
+.social__icon--facebook {
+  width: 14px;
+  height: 27px;
+  background-position: -10px -69px;
+}
+
+.social__icon--instagram {
+  width: 23px;
+  height: 24px;
+  background-position: -44px -69px;
+}
+
+.social__icon--twitter {
+  width: 27px;
+  height: 22px;
+  background-position: -119px -10px;
+  align-self: center;
+}
