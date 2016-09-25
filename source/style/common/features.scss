@@ -1,5 +1,6 @@
 .features {
   position: relative;
+  overflow: hidden;
 }
 .features__title {
   position: relative;
@@ -14,8 +15,16 @@
   padding-bottom: 245px;
   @media ($tablet-widths) {
     padding-top: 70px;
+    padding-left: 285px;
+    padding-bottom: 0;
     font-size: 90px;
     line-height: 60px;
+  }
+  &--left {
+    @media ($tablet-widths) {
+      padding-left: 30px;
+      padding-right: 350px;
+    }
   }
   &:before {
     position: absolute;
@@ -35,6 +44,11 @@
   left: 63px;
   width: 170px;
   top: 81px;
+  @media ($tablet-widths) {
+    left: -143px;
+    width: 400px;
+    top: 108px;
+  }
 
 }
 .features__basketballer-img {
@@ -43,4 +57,9 @@
   left: 4px;
   width: 304px;
   top: 93px;
+  @media ($tablet-widths) {
+    left: 330px;
+    width: 690px;
+    top: 25px;
+  }
 }

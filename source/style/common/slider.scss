@@ -2,6 +2,10 @@
   position: relative;
   background-color: #f5f4f9;
   padding: 25px 10px 25px 10px;
+  @media ($tablet-widths) {
+    background-color: #fff;
+    padding: 25px 0 0 0;
+  }
   input {
     display: none;
     position: absolute;
@@ -48,8 +52,35 @@ label {
   width: 300px;
   float: left;
   @media ($tablet-widths) {
+    padding: 20px 0 20px 285px;
     width: 100%;
     float: none;
+  }
+  &--left {
+    @media ($tablet-widths) {
+      padding-left: 30px;
+      padding-right: 350px;
+    }
+  }
+  &:nth-of-type(2) {
+    @media ($tablet-widths) {
+      background-color: #f5f4f9;
+    }
+  }
+  &:nth-of-type(3) {
+     @media ($tablet-widths) {
+       background-color: $purple;
+     }
+   }
+  &:nth-of-type(3).slide--left {
+    @media ($tablet-widths) {
+      background-color: #090c35;
+    }
+  }
+  &:nth-of-type(3) .slide__text {
+    @media ($tablet-widths) {
+      color: #ffffff;
+    }
   }
 }
 .slide__title {
@@ -59,6 +90,18 @@ label {
   line-height: 1.9em;
   text-align: center;
   padding-left: 20px;
+  @media ($tablet-widths) {
+    font-size: 36px;
+    padding-left: 30px;
+    text-align: left;
+    margin: 0;
+  }
+}
+.slide__text {
+  @media ($tablet-widths) {
+    font-size: 18px;
+    line-height: 28px;
+  }
 }
 #btn-1:checked ~ .slider__controls label[for="btn-1"],
 #btn-2:checked ~ .slider__controls label[for="btn-2"],
