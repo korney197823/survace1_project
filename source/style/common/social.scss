@@ -8,6 +8,9 @@
   bottom: 0;
   left: 0;
   right: 0;
+  @media ($tablet-widths) {
+    height: 92px;
+  }
   .logo,
   .text {
     display: none;

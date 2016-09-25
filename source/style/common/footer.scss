@@ -2,15 +2,21 @@
   position: relative;
   min-height: 570px;
   padding: 95px 5px 15px 5px;
-
   background: center url("../img/bg-footer.jpg") no-repeat;
   background-size: cover;
-
+  @media ($tablet-widths) {
+    padding-top: 125px;
+    padding-bottom: 92px;
+  }
 }
 .footer__logo-wrap {
   margin: 0 auto;
   width: 73px;
   height: 78px;
+  @media ($tablet-widths) {
+    width: 130px;
+    height: 138px;
+  }
 }
 
 .page__footer-title {
@@ -20,6 +26,12 @@
   text-align: center;
   margin-top: 50px;
   margin-bottom: 70px;
+  @media ($tablet-widths) {
+    font-size: 80px;
+    line-height: 80px;
+    margin-top: 70px;
+    margin-bottom: 180px;
+  }
   &:before {
     position: absolute;
     content: '';
@@ -29,6 +41,12 @@
     background-color: #5e42b0;
     top: 240px;
     left: 0px;
+    @media ($tablet-widths) {
+      width: 200px;
+      height: 5px;
+      top: 400px;
+      left: 0px;
+    }
   }
   &:after {
     position: absolute;
@@ -39,6 +57,12 @@
     background-color: #5e42b0;
     top: 243px;
     left: 118px;
+    @media ($tablet-widths) {
+      width: 405px;
+      height: 5px;
+      top: 400px;
+      left: 291px;
+    }
   }
   span {
     display: block;
@@ -46,5 +70,9 @@
     color: $purple;
     text-align: center;
     margin-top: 10px;
+    @media ($tablet-widths) {
+      font-size: 36px;
+      line-height: 36px;
+    }
   }
 }

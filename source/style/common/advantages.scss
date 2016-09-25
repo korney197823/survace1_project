@@ -13,11 +13,20 @@
   background-color: $purple;
   color: #ffffff;
   text-align: center;
+  @media ($tablet-widths) {
+    width: 116px;
+    height: 116px;
+    top: -170px;
+  }
   span {
     position: relative;
     line-height: 70px;
     font-size: 14px;
     font-weight: bold;
+    @media ($tablet-widths) {
+      font-size: 24px;
+      line-height: 116px;
+    }
     &::after {
       position: absolute;
       content: "";
@@ -28,6 +37,11 @@
       border-radius: 2px;
       bottom: -5px;
       left: 0px;
+      @media ($tablet-widths) {
+        width: 22px;
+        height: 5px;
+        left: 3px;
+      }
     }
   }
 
@@ -37,11 +51,22 @@
   line-height: 1.91em;
   color: $lightgray;
   text-transform: uppercase;
+  @media ($tablet-widths) {
+    font-size: 90px;
+    line-height: 60px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+  }
 }
 .cart__text {
   position: relative;
   margin: 0;
   padding-bottom: 15px;
+  @media ($tablet-widths) {
+    font-size: 24px;
+    line-height: 28px;
+    padding-bottom: 40px;
+  }
   &::after {
     position: absolute;
     content: '';

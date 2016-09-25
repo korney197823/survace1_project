@@ -87,6 +87,11 @@
   @media ($tablet-widths) {
     margin-bottom: 75px;
   }
+  &--footer {
+    @media ($tablet-widths) {
+      margin-bottom: 130px;
+    }
+  }
 }
 .btn {
   display: block;
