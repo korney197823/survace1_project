@@ -20,6 +20,7 @@
 }
 
 .page__footer-title {
+  position: relative;
   font-size: 2.2666666em;
   text-transform: uppercase;
   color: #ffffff;
@@ -39,12 +40,12 @@
     height: 3px;
     transform: rotate(-45deg);
     background-color: #5e42b0;
-    top: 240px;
+    top: 12px;
     left: 0px;
     @media ($tablet-widths) {
       width: 200px;
       height: 5px;
-      top: 400px;
+      top: 60px;
       left: 0px;
     }
   }
@@ -55,12 +56,12 @@
     height: 3px;
     transform: rotate(-45deg);
     background-color: #5e42b0;
-    top: 243px;
+    top: 24px;
     left: 118px;
     @media ($tablet-widths) {
       width: 405px;
       height: 5px;
-      top: 400px;
+      top: 90px;
       left: 291px;
     }
   }
