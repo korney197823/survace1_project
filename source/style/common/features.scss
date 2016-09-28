@@ -26,28 +26,51 @@
       padding-right: 350px;
     }
   }
+
+}
+.features-img__wrap {
+  position: relative;
   &:before {
     position: absolute;
     content: '';
     width: 265px;
     height: 3px;
-    transform: rotate(-45deg);
+    transform: rotate(-49deg);
     background-color: #5e42b0;
-    top: 186px;
+    top: -114px;
     left: 23px;
   }
 }
-
+.features__wrap--footballer {
+  &:before {
+    @media ($tablet-widths) {
+      top: 72px;
+      left: 20px;
+      height: 6px;
+      z-index: 2;
+    }
+  }
+}
+.features__wrap--basketballer {
+  &:before {
+    @media ($tablet-widths) {
+      top: 257px;
+      left: 440px;
+      height: 6px;
+      z-index: 2;
+    }
+  }
+}
 .features__footballer-img {
   position: absolute;
   z-index: 2;
   left: 63px;
   width: 170px;
-  top: 81px;
+  top: -220px;
   @media ($tablet-widths) {
-    left: -143px;
-    width: 400px;
-    top: 108px;
+    left: -157px;
+    width: 430px;
+    top: -44px;
   }
 
 }
@@ -56,10 +79,10 @@
   z-index: 2;
   left: 4px;
   width: 304px;
-  top: 93px;
+  top: -220px;
   @media ($tablet-widths) {
-    left: 330px;
-    width: 690px;
-    top: 25px;
+    left: 338px;
+    width: 670px;
+    top: -103px;
   }
 }

@@ -2,6 +2,11 @@
   @media ($tablet-widths) {
     margin-bottom: 100px;
   }
+  @media ($desktop-widths) {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 170px;
+  }
 }
 .menu__wrapper {
   display: flex;
@@ -21,6 +26,9 @@
   @media ($tablet-widths) {
     flex-wrap: nowrap;
   }
+  @media ($desktop-widths) {
+    width: 570px;
+  }
 }
 .menu__item {
   display: block;
@@ -39,6 +47,8 @@
   color: $purple;
   @media ($tablet-widths) {
     font-size: 16px;
-
+  }
+  @media ($desktop-widths) {
+    font-size: 14px;
   }
 }

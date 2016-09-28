@@ -10,6 +10,10 @@
   @media ($tablet-widths) {
     justify-content: space-between;
   }
+  @media ($desktop-widths) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 .logo {
   width: 140px;
@@ -48,6 +52,13 @@
     line-height: 1.3em;
     padding-left: 80px;
   }
+  @media ($desktop-widths) {
+    font-size: 90px;
+    line-height: 1.3em;
+    margin-top: 280px;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
   &::before {
     position: absolute;
     content: '';
@@ -64,6 +75,10 @@
       top: 120px;
       left: 145px;
     }
+    @media ($desktop-widths) {
+      top: 100px;
+      left: 362px;
+    }
   }
 }
 .header-title__row {
@@ -76,6 +91,9 @@
   }
   &:not(:first-of-type) {
     padding-left: 55px;
+    @media ($desktop-widths) {
+      padding-left: 480px;
+    }
   }
 }
 .btn__wrapper {
@@ -86,6 +104,9 @@
   margin-bottom: 40px;
   @media ($tablet-widths) {
     margin-bottom: 75px;
+  }
+  @media ($desktop-widths) {
+    justify-content: center;
   }
   &--footer {
     @media ($tablet-widths) {
@@ -108,6 +129,11 @@
   text-decoration: none;
   color: #ffffff;
   text-transform: uppercase;
+  &:first-of-type {
+    @media ($desktop-widths) {
+      margin-right: 50px;
+    }
+  }
   @media ($tablet-widths) {
     width: 310px;
     height: 77px;
