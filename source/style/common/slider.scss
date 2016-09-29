@@ -21,6 +21,7 @@
   margin: 0 auto;
   @media ($tablet-widths) {
     overflow: visible;
+    width: 100%;
   }
 }
 .slider__controls {
