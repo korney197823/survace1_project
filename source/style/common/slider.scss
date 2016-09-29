@@ -17,6 +17,8 @@
 }
 .slider__inner {
   overflow: hidden;
+  width: 300px;
+  margin: 0 auto;
   @media ($tablet-widths) {
     overflow: visible;
   }

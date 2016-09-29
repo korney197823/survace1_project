@@ -4,6 +4,7 @@
 }
 .features__title {
   position: relative;
+  text-align: center;
   text-transform: uppercase;
   font-size: 50px;
   font-weight: bold;
@@ -38,7 +39,7 @@
     transform: rotate(-49deg);
     background-color: #5e42b0;
     top: -114px;
-    left: 23px;
+    left: calc(50% - 132px);
   }
 }
 .features__wrap--footballer {
@@ -64,9 +65,9 @@
 .features__footballer-img {
   position: absolute;
   z-index: 2;
-  left: 63px;
   width: 170px;
   top: -220px;
+  left: calc(50% - 85px);
   @media ($tablet-widths) {
     left: -157px;
     width: 430px;
@@ -77,9 +78,9 @@
 .features__basketballer-img {
   position: absolute;
   z-index: 2;
-  left: 4px;
   width: 304px;
   top: -220px;
+  left: calc(50% - 152px);
   @media ($tablet-widths) {
     left: 338px;
     width: 670px;
