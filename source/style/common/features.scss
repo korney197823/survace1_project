@@ -18,13 +18,20 @@
     padding-top: 70px;
     padding-left: 285px;
     padding-bottom: 0;
+    text-align: left;
     font-size: 90px;
     line-height: 60px;
+  }
+  @media ($desktop-widths) {
+    padding-left: 50%;
   }
   &--left {
     @media ($tablet-widths) {
       padding-left: 30px;
       padding-right: 350px;
+    }
+    @media ($desktop-widths) {
+      padding-left: 10.4%;
     }
   }
 
@@ -50,16 +57,23 @@
       height: 6px;
       z-index: 2;
     }
+    @media ($desktop-widths) {
+      content: none;
+    }
   }
 }
 .features__wrap--basketballer {
   &:before {
     @media ($tablet-widths) {
-      top: 257px;
-      left: 440px;
+      top: 226px;
+      left: calc(100% - 305px);
       height: 6px;
       z-index: 2;
     }
+    @media ($desktop-widths) {
+      content: none;
+    }
+
   }
 }
 .features__footballer-img {
@@ -73,7 +87,9 @@
     width: 430px;
     top: -44px;
   }
-
+  @media ($desktop-widths) {
+    left: 15%;
+  }
 }
 .features__basketballer-img {
   position: absolute;
@@ -82,8 +98,13 @@
   top: -220px;
   left: calc(50% - 152px);
   @media ($tablet-widths) {
-    left: 338px;
-    width: 670px;
-    top: -103px;
+    position: absolute;
+    display: block;
+    width: 669px;
+    top: -86px;
+    left: calc(100% - 425px);
+  }
+  @media ($desktop-widths) {
+    left: calc(77% - 425px);
   }
 }

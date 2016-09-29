@@ -60,10 +60,18 @@ label {
     width: 100%;
     float: none;
   }
+  @media ($desktop-widths) {
+    padding-left: 50%;
+    padding-right: 10.4%;
+  }
   &--left {
     @media ($tablet-widths) {
       padding-left: 30px;
       padding-right: 350px;
+    }
+    @media ($desktop-widths) {
+      padding-left: 10.4%;
+      padding-right: 50%;
     }
   }
   &:nth-of-type(2) {

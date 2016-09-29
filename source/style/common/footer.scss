@@ -48,6 +48,9 @@
       top: 60px;
       left: 0px;
     }
+    @media ($desktop-widths) {
+      left: 210px;
+    }
   }
   &:after {
     position: absolute;
@@ -63,6 +66,9 @@
       height: 5px;
       top: 90px;
       left: 291px;
+    }
+    @media ($desktop-widths) {
+      left: 460px;
     }
   }
   span {
