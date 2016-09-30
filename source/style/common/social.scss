@@ -8,11 +8,16 @@
   bottom: 0;
   left: 0;
   right: 0;
+  padding-left: 3.125%;
+  padding-right: 3.125%;
   @media ($tablet-widths) {
     height: 92px;
   }
+  @media ($desktop-widths) {
+    justify-content: space-between;
+  }
   .logo,
-  .text {
+  .social__text {
     display: none;
     @media ($desktop-widths) {
       display: block;
@@ -25,8 +30,10 @@
   justify-content: space-between;
   align-self: center;
   width: 150px;
-  //margin: 0 auto;
   font-size: 0;
+  @media ($desktop-widths) {
+    margin-left: 12%;
+  }
 }
 
 .social__icon {
@@ -53,4 +60,8 @@
   height: 22px;
   background-position: -119px -10px;
   align-self: center;
+}
+.social__text {
+  font-size: 20px;
+  color: #ffffff;
 }
